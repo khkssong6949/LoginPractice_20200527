@@ -3,6 +3,7 @@ package kr.co.hgney.loginpractice_20200527
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         eventBtn.setOnClickListener {
             Log.d("이벤트확인", "버튼클릭")
             Log.e("이벤트확인","에러로그 발생")
+
+            Toast.makeText(this, "버튼 클릭 됨", Toast.LENGTH_SHORT).show()
         }
     }
 }
